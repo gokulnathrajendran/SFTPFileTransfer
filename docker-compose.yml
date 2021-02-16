@@ -1,0 +1,13 @@
+version: "2.3"
+services:
+    sftp:
+        image: atmoz/sftp
+        ports:
+            - "9922:22"
+        command: foo:pass:::/foo-home
+        networks:
+          - gokul_network
+
+networks:
+  gokul_network:
+    driver: bridge
