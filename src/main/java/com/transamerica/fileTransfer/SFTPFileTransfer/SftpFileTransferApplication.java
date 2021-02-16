@@ -16,8 +16,7 @@ public class SftpFileTransferApplication {
 	private static synchronized void runAsService(){
 		while(true){
 			try{
-				//TODO: change it to days.
-				TimeUnit.MINUTES.sleep(1);
+				TimeUnit.DAYS.sleep(1);
 			}catch (InterruptedException e){
 				e.printStackTrace();
 			}
